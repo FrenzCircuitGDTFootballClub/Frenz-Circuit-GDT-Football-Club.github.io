@@ -6,50 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
     body {
+      margin: 0;
       min-height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("football-bg.jpg") no-repeat center center fixed;
-      background-size: cover;
+      font-family: Arial, Helvetica, sans-serif;
       color: white;
-      overflow-x: hidden;
+
+      /* BACKGROUND IMAGE */
+      background: 
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("football-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
 
-    /* Flying footballs */
-    .football {
-      position: absolute;
-      font-size: 2.5rem;
-      animation: fly linear infinite;
-      opacity: 0.7;
-      z-index: 1;
-    }
-
-    @keyframes fly {
-      from {
-        transform: translateX(-10vw) rotate(0deg);
-      }
-      to {
-        transform: translateX(110vw) rotate(360deg);
-      }
-    }
-
-    .football:nth-child(1) { top: 15%; animation-duration: 12s; }
-    .football:nth-child(2) { top: 35%; animation-duration: 9s; }
-    .football:nth-child(3) { top: 55%; animation-duration: 14s; }
-    .football:nth-child(4) { top: 75%; animation-duration: 11s; }
-
-    /* Main content */
     .content {
-      position: relative;
-      z-index: 2;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -61,32 +33,33 @@
 
     h1 {
       font-size: 3rem;
+      margin-bottom: 10px;
       letter-spacing: 2px;
     }
 
     .tagline {
-      margin: 10px 0 30px;
       font-size: 1.2rem;
+      margin-bottom: 30px;
       opacity: 0.9;
     }
 
-    /* Contact box */
     .contact {
-      margin-top: 30px;
       background: rgba(0, 0, 0, 0.55);
-      padding: 25px 30px;
-      border-radius: 15px;
-      max-width: 480px;
+      padding: 30px;
+      border-radius: 18px;
+      max-width: 520px;
       width: 100%;
+      text-align: left;
     }
 
     .contact h2 {
-      margin-bottom: 15px;
-      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.7rem;
     }
 
     .contact p {
-      margin: 8px 0;
+      margin: 10px 0;
       font-size: 1rem;
     }
 
@@ -94,60 +67,41 @@
       color: #00ffcc;
       text-decoration: none;
       font-weight: bold;
-      word-break: break-all;
     }
 
     .contact a:hover {
       text-decoration: underline;
     }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
-
-  <!-- Flying football emojis -->
-  <div class="football">⚽</div>
-  <div class="football">⚽</div>
-  <div class="football">⚽</div>
-  <div class="football">⚽</div>
-
-  <!-- Main content -->
   <div class="content">
     <h1>Frenz Circuit GDT Football Club</h1>
-    <p class="tagline">⚽ Passion • Discipline • Unity ⚽</p>
+    <div class="tagline">⚽ The Pink Roses – Passion • Unity • Football</div>
 
     <div class="contact">
       <h2>Contact Information</h2>
 
-      <p><strong>Address:</strong><br>
+      <p><strong>📍 Address:</strong><br>
         1 North Bridge Road #08-08<br>
         High Street Centre<br>
         Singapore 179094
       </p>
 
-      <p><strong>Contact Person:</strong> Zamri Abdullah</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/6587422630">+65 8742 2630</a></p>
-      <p><strong>Email:</strong> <a href="mailto:gdt.singapore@gmail.com">gdt.singapore@gmail.com</a></p>
-
-      <p><strong>Facebook:</strong><br>
-        <a href="https://www.facebook.com/GDTCFCThePinkRoses" target="_blank">
-          facebook.com/GDTCFCThePinkRoses
-        </a>
+      <p><strong>👤 Contact Person:</strong><br>
+        Zamri Abdullah
       </p>
 
-      <p><strong>Instagram:</strong><br>
-        <a href="https://www.instagram.com/gdtc_fc" target="_blank">
-          instagram.com/gdtc_fc
-        </a>
+      <p><strong>📞 WhatsApp:</strong><br>
+        <a href="https://wa.me/6587422630" target="_blank">+65 8742 2630</a>
       </p>
 
-      <p><strong>TikTok:</strong><br>
-        <a href="https://www.tiktok.com/@gdtc_fc" target="_blank">
-          tiktok.com/@gdtc_fc
-        </a>
-      </p>
-    </div>
-  </div>
-
-</body>
-</html>
+      <p><strong>📧 Email:</str
